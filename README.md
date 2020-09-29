@@ -7,10 +7,15 @@
 
 ## Requirements
 The following packages must be installed to run the Fetch Rewards Assessment:
+
 -Python 3
+
 -[Flask](https://pypi.org/project/Flask/)
+
 -[Flask-API](https://pypi.org/project/Flask-API/)
+
 -[flask-swagger-ui](https://pypi.org/project/flask-swagger-ui/)
+
 
 ## Run Instructions
 To run the application, navigate to the folder where the application is saved, and from the command line, run 'python Assessment.py'
