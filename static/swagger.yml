@@ -1,0 +1,47 @@
+swagger: "2.0"
+info:
+  description: "This is the api documentation for the Fetch Rewards Code Assessment."
+  version: "1.0.0"
+  title: "Fetch Rewards API"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "127.0.0.1:8888"
+basePath: "/"
+schemes:
+- "http"
+paths:
+  /pyramid:
+    post:
+      tags:
+      - "pyramid"
+      summary: "Determine if given input is a pyramid word."
+      description: "A word is a pyramid word if you can arrange the letters in increasing frequency, starting with 1 and continuing without gaps and without duplicates."
+      operationId: "pyramid_api"
+      consumes:
+      - "text/plain"
+      produces:
+      - "text/plain"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Word to determine whether or not it is a pyramid word."
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: "OK"
+        "400":
+          description: "Bad Request"
+        "405":
+          description: "Method not allowed"
+
+  ApiResponse:
+    type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
