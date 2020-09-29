@@ -25,6 +25,7 @@ The API accepts a string request body and returns 'True' if the string is a pyra
 The API uses port 8888.
 
 Sample curl command: curl -X POST "http://127.0.0.1:8888/pyramid" -H "accept: text/plain" -H "Content-Type: text/plain" -d "banana"
+
 Sample response: True
 
 ## Unit Testing
